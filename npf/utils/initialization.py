@@ -45,7 +45,7 @@ def get_activation_name(activation):
     }
     for k, v in mapper.items():
         if isinstance(activation, k):
-            return k
+            return v
 
     raise ValueError("Unkown given activation type : {}".format(activation))
 
